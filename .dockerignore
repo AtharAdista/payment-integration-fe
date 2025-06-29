@@ -1,0 +1,37 @@
+# .dockerignore
+
+# Git specific files
+.git
+.gitignore
+
+# Node modules
+node_modules
+
+# Build output (if generated locally)
+dist
+build
+
+# Test coverage
+coverage
+
+# IDE/Editor specific files
+.vscode
+.idea
+
+# OS specific files
+*.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lock files (handled by COPY package*.json)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Environment files (should be handled via build args or runtime env vars)
+.env*
