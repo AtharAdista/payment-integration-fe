@@ -32,10 +32,9 @@ const Register = () => {
         }
       );
 
-      const result = await response.json();
 
       if (!response.ok) {
-        setErrorMessage(result.errors);
+        setErrorMessage("Email sudah pernah digunakan");
         throw new Error("Register failed");
       }
 

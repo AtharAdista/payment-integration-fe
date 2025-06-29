@@ -86,6 +86,7 @@ function Payment() {
 
   const handleVaChannelClick = async (channelCode: string) => {
     try {
+
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/subscribe`,
         {

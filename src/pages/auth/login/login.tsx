@@ -32,8 +32,7 @@ const Login = () => {
       );
 
       if (!response.ok) {
-        const result = await response.json();
-        setErrorMessage(result.errors);
+        setErrorMessage("Email atau Password salah");
         throw new Error("Login failed");
       }
 

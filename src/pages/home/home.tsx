@@ -44,10 +44,10 @@ function Home() {
       <Navbar />
       <div className="flex flex-col items-center justify-center py-28 space-y-14">
         <div className="font-semibold text-2xl">
-          Selamat datang di page untuk paket {activePackageName || "..."}
+          Selamat datang di page untuk paket Free
         </div>
 
-        {isFree && (
+        {isFree || !activePackageName && (
           <Button asChild>
             <a href="/pricing" className="text-lg cursor-pointer">
               Pricing

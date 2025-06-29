@@ -44,7 +44,7 @@ const ProtectedRoutePackage = ({ allowedPackages, children }: ProtectedRouteProp
     }
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return ;
 
   if (!packageName || !allowedPackages.includes(packageName)) {
     return <Navigate to="/" replace />;
